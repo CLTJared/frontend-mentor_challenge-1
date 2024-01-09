@@ -18,14 +18,9 @@
     body { 
       font-size: 15px; 
       font-family: 'Outfit', sans-serif; 
-      font-weight: 400; 
-      overflow: hidden; 
-      background: hsl(0, 0%, 100%); 
-      background-image: radial-gradient(black 1px, transparent 0);
-      background-size: 5px 5px;
-      background-position: -19px -19px;
+      font-weight: 400;
+      background-color: hsl(212, 45%, 89%);
     }
-
 
     section {
       background-color: white;
@@ -35,21 +30,10 @@
       padding: .8rem;
       letter-spacing: 1px;
       box-shadow: .2rem .2rem 1rem hsl(218, 44%, 22%, 25%);
-      position: relative;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-    }
-
-    main {
-      background-color: hsl(212, 45%, 89%);
-      min-width: 1440px;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      padding: 10rem 0;
-      box-shadow: .2rem .7rem 1rem hsl(218, 44%, 22%, 25%);
     }
 
     section img {
@@ -66,8 +50,36 @@
       font-weight: 700;
       font-size: 20px;
     }
+
+    @media (min-width:550px) {
+      body {
+        overflow: hidden; 
+        background: hsl(0, 0%, 100%); 
+        background-image: radial-gradient(black 1px, transparent 0);
+        background-size: 5px 5px;
+        background-position: -19px -19px;
+      }
+
+      main {
+        background-color: hsl(212, 45%, 89%);
+        min-width: 1440px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10rem 0;
+        box-shadow: .2rem .7rem 1rem hsl(218, 44%, 22%, 25%);
+      }
+
+      section {
+        position: relative;
+        transform: translate(-50%, 0%);
+      }
+
+    }
   </style>
 </head>
+
 <body>
   <main>
     <section>
